@@ -106,7 +106,7 @@ public abstract class BasePage {
     }
 
     @SneakyThrows
-    public <T> String readTextErrorMessage(T elementAttr) throws InterruptedException {
+    public <T> String readTextErrorMessage(T elementAttr) {
         Thread.sleep(5000); //This needs to be improved.
         return driver
             .findElement((By) elementAttr)

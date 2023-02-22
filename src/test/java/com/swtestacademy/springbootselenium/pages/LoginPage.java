@@ -42,12 +42,7 @@ public class LoginPage extends BasePage {
     }
 
     public LoginPage verifyPasswordErrorMessageWithCss(String expectedText) {
-        try {
-			assertEquals(expectedText, readTextErrorMessage(errorMessagePasswordCssBy));
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+        assertEquals(expectedText, readTextErrorMessage(errorMessagePasswordCssBy));
         return this;
     }
 
