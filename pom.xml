@@ -16,7 +16,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <maven.surefire.version>3.0.0-M8</maven.surefire.version>
+        <maven.surefire.version>2.22.2</maven.surefire.version>
         <java.version>17</java.version>
         <selenium.version>4.8.0</selenium.version>
         <junit.jupiter.version>5.9.2</junit.jupiter.version>
