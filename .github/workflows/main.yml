@@ -20,4 +20,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: selenium-results
-        path: ./target/surefire-reports/*
+        path: ./target/*
