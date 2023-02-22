@@ -13,6 +13,8 @@ jobs:
       run: |
           chmod +x ./scripts/InstallChrome.sh
           ./scripts/InstallChrome.sh 
+    - name: Build artifacts
+      run: mvn clean pakcge 
     - name: Build with Maven
       run: mvn test --file pom.xml
  
