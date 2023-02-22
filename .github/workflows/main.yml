@@ -14,7 +14,7 @@ jobs:
           chmod +x ./scripts/InstallChrome.sh
           ./scripts/InstallChrome.sh 
     - name: Build artifacts
-      run: mvn clean pakcge 
+      run: mvn clean install
     - name: Build with Maven
       run: mvn test --file pom.xml
  
@@ -22,4 +22,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: selenium-results
-        path: ./target/*
+        path: ./*
